@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+
+
+%% Packages import
+\usepackage{fancyhdr}
+
+%% Galbel Settings
+\usepackage[margin=1in]{geometry}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape \MakeUppercase{\LaTeX\ Train}}
+\fancyhead[R]{\slshape tor4z}
+\fancyfoot[C]{\thepage}
+\parindent 0ex
+\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+%% Title page
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\Large{\textbf{\LaTeX\ Train}}\\
+\Large{\textbf{Internal Assessment}}\\
+\vfill
+\line(1,0){400}\\[1mm]
+\huge{\textbf{Article train}}\\[3mm]
+\Large{\textbf{- The Usage of \LaTeX\ -}}\\[1mm]
+\line(1,0){400}\\
+\vfill
+By tor4z \\
+ID:25578 \\
+\today
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\TeX\ is a computer program for typesetting documents, created by Donald Knuth. It takes a suitably prepared computer file and converts it to a form which may be printed on many kinds of printers, including dot-matrix printers, laser printers and high-resolution typesetting machines. \LaTeX\ is a set of macros for \TeX\ that aims at reducing the user's task to the sole role of writing the content, \LaTeX\ taking care of all the formatting process. A number of well-established publishers now use \TeX\ or \LaTeX\ to typeset books and mathematical journals. It is also well appreciated by users caring about typography, consistent formatting, efficient collaborative writing and open formats\cite{WIKI1}.
+
+\section{Installation}
+\subsection{Distributions}
+
+\TeX\ and \LaTeX\ are available for most computer platforms, since they were programmed to be very portable. They are most commonly installed using a distribution, such as teTeX, MiKTeX, or MacTeX. \TeX\ distributions are collections of packages and programs (compilers, fonts, and macro packages) that enable you to typeset without having to manually fetch files and configure things. \LaTeX\ is just a set of macro packages built for \TeX .
+
+\subsection{BSD and GNU/Linux}
+
+In the past, the most common distribution used to be teTeX. As of May 2006 teTeX is no longer actively maintained and its former maintainer Thomas Esser recommended TeX Live as the replacement.\\
+
+The easy way to get TeX Live is to use the package manager or portage tree coming with your operating system. Usually it comes as several packages, with some of them being essential, other optional. The core TeX Live packages should be around 200-300 MB.\\
+
+If your *BSD or GNU/Linux distribution does not have the TeX Live packages, you should report a wish to the bug tracking system. In that case you will need to download TeX Live yourself and run the installer by hand.\\
+
+You may wish to install the content of \TeX\ Live more selectively. See below.
+
+\subsection{Mac OS X}
+
+Mac OS X users may use MacTeX, a \TeX\ Live-based distribution supporting \TeX, LaTeX, AMSTeX, ConTeXt, XeTeX and many other core packages. Download MacTeX.pkg on the MacTeX page, unzip it and follow the instructions. Further information for Mac OS X users can be found on the \TeX\ on Mac OS X Wiki.\\
+
+Since Mac OS X is also a Unix-based system, \TeX\ Live is naturally available through MacPorts and Fink. Homebrew users should use the official MacTeX installer because of the unique directory structure used by \TeX\ Live. Further information for Mac OS X users can be found on the \TeX\ on Mac OS X Wiki.
+
+
+\subsection{Microsoft Windows}
+
+Microsoft Windows users can install MiKTeX onto their computer. It has an easy installer that takes care of setting up the environment and downloading core packages. This distribution has advanced features, such as automatic installation of packages, and simple interfaces to modify settings, such as default paper sizes.\\
+
+There is also a port of \TeX\ Live available for Windows.
+
+
+\section{\LaTeX/Basics}
+
+\LaTeX\ uses a markup language in order to describe document structure and presentation. \LaTeX\ converts your source text, combined with the markup, into a high quality document. For the purpose of analogy, web pages work in a similar way: the HTML is used to describe the document, but it is your browser that presents it in its full glory - with different colours, fonts, sizes, etc.
+
+The input for \LaTeX\ is a plain text file. You can create it with any text editor. It contains the text of the document, as well as the commands that tell \LaTeX\ how to typeset the text.
+
+\subsection{Spaces}
+
+The \LaTeX\ compiler normalises whitespace so that whitespace characters, such as [space] or [tab], are treated uniformly as "space": several consecutive "spaces" are treated as one, "space" opening a line is generally ignored, and a single line break also yields "space". A double line break (an empty line), however, defines the end of a paragraph; multiple empty lines are also treated as the end of a paragraph. An example of applying these rules is presented below: the left-hand side shows the user's input (.tex), while the right-hand side depicts the rendered output (.dvi/.pdf/.ps).
+
+\pagebreak
+
+\begin{thebibliography}{}
+
+\bibitem{WIKI1}
+wikibooks.
+\textit{LaTeX/Basics}.
+Web 27 May 2016.
+\texttt{https://en.wikibooks.org/wiki/LaTeX/Basicss}
+
+
+\end{thebibliography}
+
+\end{document}
